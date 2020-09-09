@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: Roboto, sans-serif;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #ff7b73;
+  position: relative;
+  font-size: 18px;
+}
+
+.nav>.nav-header {
+  display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-right {
+  float: right;
+  height: 100%;
+}
+
+.nav>.nav-search {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.nav>.nav-search .input-search {
+  height: 2.5em;
+  border: none;
+  outline: none;
+  border-radius: 0.35em;
+  padding: 0 0.714em;
+  font-weight: 700;
+  color: #555;
+  width: 30em;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+  height: 100%;
+}
+
+.nav>.nav-links>a:hover {
+  border-bottom: 4px solid #ffc0bc;
+  color: #ffc0bc;
+  transition: 0.2s;
+}
+
+.dot {
+  height: 28px;
+  width: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot::before {
+  content: attr(data-text);
+  position: absolute;
+  transform: translate(60%, 20%);
+  color: #aaa;
+}
+
+.nav>.nav-links>a:hover>.dot {
+  background-color: #ffc0bc;
+  transition: 0.2s;
+}
+
+@media (max-width:1024px) {
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav>.nav-links {
+    position: fixed;
+    width: 100%;
+    background-color: #ff7b73;
+    height: 50px;
+    overflow-y: hidden;
+    display: flex;
+    bottom: 0;
+    align-items: center;
+  }
+  .nav>.nav-search {
+    float: right;
+    left: 0;
+    position: relative;
+    transform: translate(-5%, -50%);
+  }
+  .nav>.nav-search .input-search {
+    width: unset;
+  }
+  .nav>.nav-links>a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
