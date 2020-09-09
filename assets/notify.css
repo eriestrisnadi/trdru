@@ -1,3 +1,5 @@
+@import url("utils.css");
+
 body {
   font-size: 10px;
   font-family: Roboto, sans-serif;
@@ -6,6 +8,14 @@ body {
   display: grid;
   height: 100vh;
   place-items: center;
+}
+
+h3 {
+ text-align: center;
+}
+
+a, a:hover {
+  color: #fff;
 }
 
 .form-container {

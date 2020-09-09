@@ -1,0 +1,11 @@
+a, a:hover {
+  color: #03a9f4;
+  text-decoration: underline;
+}
+
+.content {
+  margin: 0;
+  display: grid;
+  height: 50vh;
+  place-items: center;
+}

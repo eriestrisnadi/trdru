@@ -9,19 +9,24 @@
 </head>
 
 <body>
-  <div class="form-container">
-    <div class="input-group">
-      <div class="input-mask open">
-        <button class="btn-toggle" type="button">Notify me</button>
+  <div class="content">
+    <div class="form-container">
+      <div class="input-group">
+        <div class="input-mask open">
+          <button class="btn-toggle" type="button">Notify me</button>
+        </div>
+        <div class="input-child">
+          <input class="input-flip" placeholder="E-mail" type="email"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+          <button class="btn-submit">Send</button>
+        </div>
+        <div class="input-complete">
+          <span>Thank you</span>
+        </div>
       </div>
-      <div class="input-child">
-        <input class="input-flip" placeholder="E-mail" type="email"
-          pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
-        <button class="btn-submit">Send</button>
-      </div>
-      <div class="input-complete">
-        <span>Thank you</span>
-      </div>
+      <h3>
+        <a href="index.html">Back to Navbar</a>
+      </h3>
     </div>
   </div>
   <script src="assets/notify.js"></script>
